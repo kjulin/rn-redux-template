@@ -33,3 +33,6 @@ Run with `npm test`
   * [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store) is used to test redux action creators and middleware
   
 **NOTE** Promises will break tests if used in component tests, see a related issue [here](https://github.com/facebook/jest/issues/1760).
+
+### Reactotron
+[Reactotron](https://github.com/reactotron/reactotron) can be used to enhance development experience. With this setup it can be used to log messages using `Reactotron.log('Message to log')` and to investigate redux actions.

@@ -1,22 +1,18 @@
 import React, {Component} from 'react';
-import {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    View
-} from 'react-native';
+import {AppRegistry} from 'react-native';
+import './src/config/ReactotronConfig';
 import {Provider} from 'react-redux';
 import store from './src/redux/store';
 import App from './src/redux/containers/app';
 
 class RNTemplate extends Component {
-    render() {
-        return (
-            <Provider store={store}>
-                <App />
-            </Provider>
-        );
-    }
+  render() {
+    return (
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+  }
 }
 
 AppRegistry.registerComponent('RNTemplate', () => RNTemplate);
